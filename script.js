@@ -117,8 +117,8 @@ function getIdea() {
             s2 = syl2[r2];
         }
         
-        var r = rand(2);
-        if (r == 0) {
+        var r = Math.random();
+        if (r < 0.5) {
             document.write(s1 + s2 + ".io");
         }
         else {
