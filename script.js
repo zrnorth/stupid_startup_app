@@ -38,7 +38,7 @@ function getArticleEnd(str) {
 
 // Remove character encodings if situation does not call for them.
 function sanitize(str) {
-    if (str.charAt(0) == '+' || str.charAt(1) == '-') {
+    if (str.charAt(0) == '+' || str.charAt(0) == '-') {
         return str.substring(1);
     }
     
@@ -104,11 +104,18 @@ function getIdea() {
         var r1 = rand(syl1.length);
         var r2;
         do {
-            r2 = rand(syl2.length);
+            r2 = rand(syl2.length + syl1.length);
         } while (r2 == r1);
         
         var s1 = syl1[r1];
-        var s2 = syl2[r2];
+        
+        var s2;
+        if (r2 > syl2.length) {
+            s2 = syl1[r2 - syl2.length];
+        }
+        else {
+            s2 = syl2[r2];
+        }
         
         var r = rand(2);
         if (r == 0) {
