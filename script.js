@@ -38,7 +38,7 @@ function getArticleEnd(str) {
 
 // Remove character encodings if situation does not call for them.
 function sanitize(str) {
-    if (str.charAt(0) == '+') {
+    if (str.charAt(0) == '+' || str.charAt(1) == '-') {
         return str.substring(1);
     }
     
