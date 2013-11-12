@@ -1,63 +1,56 @@
-var adjectives = new Array();
-adjectives[0] = "agile";
-adjectives[1] = "responsive";
-adjectives[2] = "flat";
-adjectives[3] = "social";
-adjectives[4] = "mobile-first";
-adjectives[5] = "lean";
-adjectives[6] = "object-oriented";
-adjectives[7] = "Web 3.0";
-adjectives[8] = "HTML 5";
-adjectives[9] = "user-driven";
-adjectives[10] = "native";
-adjectives[11] = "test-driven";
-adjectives[12] = "free and open source";
-adjectives[13] = "device-agnostic";
-adjectives[14] = "flexible";
-adjectives[15] = "dependency-free";
-adjectives[16] = "baked-in";
-adjectives[17] = "kickstarted";
-adjectives[18] = "lightweight";
-adjectives[19] = "modular";
-adjectives[20] = "bootstrapped";
-adjectives[21] = "crowd-sourced";
-adjectives[22] = "disruptive";
+var adjectives = [
+"agile",
+"responsive",
+"social",
+"mobile-first",
+"lean",
+"Web 3.0",
+"user-driven",
+"native",
+"test-driven",
+"device-agnostic",
+"flexible",
+"dependency-free",
+"baked-in",
+"lightweight",
+"modular",
+"bootstrapped"];
 
-var companies = new Array();
-companies[0] = "SnapChat";
-companies[1] = "Instagram";
-companies[2] = "Twitter";
-companies[3] = "MySpace";
-companies[4] = "YouTube";
-companies[5] = "online-dating service";
-companies[6] = "T-shirt store";
-companies[7] = "online-banking service";
-companies[8] = "Reddit";
-companies[9] = "Yelp";
-companies[10] = "Tumblr";
-companies[11] = "Spotify";
-companies[12] = "Netflix";
-companies[13] = "Skype";
-companies[14] = "Ebay";
-companies[15] = "Vine";
-companies[16] = "Pinterest";
-companies[17] = "Angry Birds";
-companies[18] = "Soundcloud";
-companies[19] = "DropBox";
-companies[20] = "Craiglist";
-companies[21] = "LinkedIn";
-companies[22] = "Facebook";
-companies[23] = "GitHub";
+var companies = [
+"SnapChat",
+"Instagram",
+"Twitter",
+"MySpace",
+"YouTube",
+"online-dating service",
+"T-shirt store",
+"online-banking service",
+"Reddit",
+"Yelp",
+"Tumblr",
+"Spotify",
+"Netflix",
+"Skype",
+"Ebay",
+"Vine",
+"Pinterest",
+"Angry Birds",
+"Soundcloud",
+"DropBox",
+"Craiglist",
+"LinkedIn",
+"Facebook",
+"GitHub"];
 
-var endings = new Array();
-endings[0] = " with a flat UI";
-endings[1] = " in the cloud";
-endings[2] = " with upvotes";
-endings[3] = ", but it compiles to Javascript";
-endings[4] = " featuring CSS animations";
-endings[5] = " on rails";
-endings[6] = " as a service";
-endings[7] = " built on MongoDB";
-endings[8] = " which runs anywhere";
-endings[9] = " dealing with big data";
-endings[10] = " built with the users in mind";
+var endings = [
+" with a flat UI",
+" in the cloud",
+" with upvotes",
+" as a service",
+" which runs anywhere",
+" built with the users in mind",
+" focused on UX",
+" promoted through viral marketing",
+" that will disrupt the entire industry",
+" completely crowd-sourced",
+" funded through Kickstarter"];
