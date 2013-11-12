@@ -1,5 +1,6 @@
+// '+' signifies that they need "an"
 var adjectives = [
-"agile",
+"+agile",
 "responsive",
 "social",
 "mobile-first",
@@ -16,15 +17,16 @@ var adjectives = [
 "modular",
 "bootstrapped"];
 
+// '+' signifies that they need an "an"
 var companies = [
 "SnapChat",
 "Instagram",
 "Twitter",
 "MySpace",
 "YouTube",
-"online-dating service",
-"T-shirt store",
-"online-banking service",
+"+online-dating service",
+"-T-shirt store",
+"+online-banking service",
 "Reddit",
 "Yelp",
 "Tumblr",
@@ -36,8 +38,8 @@ var companies = [
 "Pinterest",
 "Angry Birds",
 "Soundcloud",
-"DropBox",
-"Craiglist",
+"Dropbox",
+"Craigslist",
 "LinkedIn",
 "Facebook",
 "GitHub"];
@@ -47,10 +49,48 @@ var endings = [
 " in the cloud",
 " with upvotes",
 " as a service",
-" which runs anywhere",
+"+ which runs anywhere",
 " built with the users in mind",
 " focused on UX",
 " promoted through viral marketing",
-" that will disrupt the entire industry",
+"+ that will disrupt the entire industry",
 " completely crowd-sourced",
 " funded through Kickstarter"];
+
+var syl1 = [
+"Snap",
+"Insta",
+"Twit",
+"My",
+"You",
+"Red",
+"Tumble",
+"Spot",
+"Net",
+"E",
+"Pin",
+"Sound",
+"Drop",
+"Craigs",
+"Link",
+"Face",
+"Git"];
+
+var syl2 = [
+"Chat",
+"gram",
+"ter",
+"Space",
+"Tube",
+"dit",
+"r",
+"ify",
+"Flix",
+"Bay",
+"terest",
+"Cloud",
+"Box",
+"List",
+"In",
+"Book",
+"Hub"];
