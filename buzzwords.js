@@ -24,7 +24,9 @@ var adjectives = [
 "convergent",
 "dynamic",
 "search engine optimized",
-"distributed"];
+"distributed",
+"portable",
+"robust"];
 
 // '+' signifies that they need an "an"
 var companies = [
@@ -52,7 +54,8 @@ var companies = [
 "LinkedIn",
 "Facebook",
 "GitHub",
-"Stack Overflow"];
+"Stack Overflow",
+"WordPress"];
 
 var endings = [
 " with a flat UI",
@@ -78,17 +81,18 @@ var syl1 = [
 "My",
 "You",
 "Red",
-"Tumble",
+"Tumbl",
 "Spot",
 "Net",
 "E",
 "Pin",
 "Sound",
 "Drop",
-"Craigs",
+"Craig",
 "Link",
 "Face",
-"Git"];
+"Git",
+"Word"];
 
 var syl2 = [
 "Chat",
@@ -107,4 +111,5 @@ var syl2 = [
 "List",
 "In",
 "Book",
-"Hub"];
+"Hub",
+"Press"];
