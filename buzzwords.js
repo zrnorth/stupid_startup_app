@@ -19,7 +19,7 @@ var adjectives = [
 "secure",
 "highly scalable",
 "scalable",
-"next-generation"
+"next-generation",
 "cross-platform",
 "convergent",
 "dynamic",
