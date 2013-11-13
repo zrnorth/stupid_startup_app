@@ -15,7 +15,16 @@ var adjectives = [
 "baked-in",
 "lightweight",
 "modular",
-"bootstrapped"];
+"bootstrapped",
+"secure",
+"highly scalable",
+"scalable",
+"next-generation"
+"cross-platform",
+"convergent",
+"dynamic",
+"search engine optimized",
+"distributed"];
 
 // '+' signifies that they need an "an"
 var companies = [
@@ -42,7 +51,8 @@ var companies = [
 "Craigslist",
 "LinkedIn",
 "Facebook",
-"GitHub"];
+"GitHub",
+"Stack Overflow"];
 
 var endings = [
 " with a flat UI",
@@ -55,7 +65,11 @@ var endings = [
 " promoted through viral marketing",
 "+ that will disrupt the entire industry",
 " completely crowd-sourced",
-" funded through Kickstarter"];
+" funded through Kickstarter",
+"+ which runs in real-time",
+" with a focus on accessibility", 
+" with a web-oriented architecture",
+"+ which uses machine learning"];
 
 var syl1 = [
 "Snap",
