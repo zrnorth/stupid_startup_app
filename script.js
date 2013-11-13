@@ -110,11 +110,11 @@ function getIdea() {
         var s1 = syl1[r1];
         
         var s2;
-        if (r2 > syl2.length) {
-            s2 = syl1[r2 - syl2.length];
+        if (r2 < syl2.length) {
+            s2 = syl2[r2];
         }
         else {
-            s2 = syl2[r2];
+            s2 = syl1[r2 - syl2.length];
         }
         
         var r = Math.random();
