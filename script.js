@@ -1,3 +1,11 @@
+var link = "";
+
+function printLink() {
+    if (link) {
+        document.write("<a href='" + link + "'>Get it before it's gone!</a>");
+    }
+}
+
 // Returns a random integer between 0 and TOP (exclusive).
 function rand (top) {
     return Math.floor(Math.random() * (top-1));
@@ -49,9 +57,10 @@ function sanitize(str) {
 function getIdea() {
 
     var selector = rand(100);
+    link = "";
     
     // FORMAT 1 (25%): "It's a {adjective} {thing} {ending}."
-    if (selector < 25) {
+    if (selector < 20) {
         var adj = adjectives[rand(adjectives.length)];
         var com = companies[rand(companies.length)];
         var end = endings[rand(endings.length)];
@@ -63,7 +72,7 @@ function getIdea() {
         document.write("It's " + adj + " " + com + end + ".");
     }
     // FORMAT 2 (25%): "It's a {adjective}, {adjective} {thing}."
-    else if (selector < 50)
+    else if (selector < 40)
     {
         var r1 = rand(adjectives.length);
         var r2;
@@ -82,7 +91,7 @@ function getIdea() {
         document.write("It's " + adj1 + ", " + adj2 + " " + com + ".");
     }  
     // FORMAT 3 (25%): "It's like {thing}, but {adjective OR ending}."
-    else if (selector < 75) {
+    else if (selector < 60) {
         var com = companies[rand(companies.length)];
         com = getArticleNoun(com);
         var r = rand(adjectives.length + endings.length);
@@ -100,7 +109,7 @@ function getIdea() {
         document.write("It's like " + com + ", but " + other + ".");
     }
     // FORMAT 4 (25%): "{funny thing}.io"
-    else {
+    else if (selector < 80) {
         var r1 = rand(syl1.length);
         var r2;
         do {
@@ -117,12 +126,17 @@ function getIdea() {
             s2 = syl1[r2 - syl2.length];
         }
         
-        var r = Math.random();
-        if (r < 0.5) {
-            document.write(s1 + s2 + ".io");
-        }
-        else {
-            document.write(s1 + s2 + ".ly");
-        }
+
+        document.write(s1 + s2 + ".io");
+        link = "https://iwantmyname.com/?domain=" + s1 + s2 + ".io" + "&hideUnavailable=false"
+    }
+    
+    // FORMAT 5 (20%): "It's like {thing} for {blank}s."
+    else {
+        var com = companies[rand(companies.length)];
+        com = getArticleNoun(com);
+        var grp = groups[rand(groups.length)];
+        
+        document.write("It's like " + com + ", but for " + grp + ".");
     }
 }
