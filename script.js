@@ -16,7 +16,7 @@ function getArticle(str) {
     if (str.charAt(0) == '+') {
         return "an " + str.substring(1);
     }
-    
+
     return "a " + str;
 }
 
@@ -28,7 +28,7 @@ function getArticleNoun(str) {
     else if (str.charAt(0) == '-') {
         return "a " + str.substring(1);
     }
-    
+
     return str;
 }
 
@@ -40,7 +40,7 @@ function getArticleEnd(str) {
         }
         str = "it" + str.substring(i);
     }
-    
+
     return str;
 }
 
@@ -49,7 +49,7 @@ function sanitize(str) {
     if (str.charAt(0) == '+' || str.charAt(0) == '-') {
         return str.substring(1);
     }
-    
+
     return str;
 }
 
@@ -58,13 +58,13 @@ function getIdea() {
 
     var selector = rand(100);
     link = "";
-    
+
     // FORMAT 1 (25%): "It's a {adjective} {thing} {ending}."
     if (selector < 20) {
         var adj = adjectives[rand(adjectives.length)];
         var com = companies[rand(companies.length)];
         var end = endings[rand(endings.length)];
-        
+
         adj = getArticle(adj);
         com = sanitize(com);
         end = sanitize(end);
@@ -79,23 +79,23 @@ function getIdea() {
         do {
             r2 = rand(adjectives.length);
         } while (r2 == r1);
-        
+
         adj1 = adjectives[r1];
         adj2 = adjectives[r2];
         com = companies[rand(companies.length)];
-        
+
         adj1 = getArticle(adj1);
         adj2 = sanitize(adj2);
         com = sanitize(com);
-        
+
         document.write("It's " + adj1 + ", " + adj2 + " " + com + ".");
-    }  
+    }
     // FORMAT 3 (25%): "It's like {thing}, but {adjective OR ending}."
     else if (selector < 60) {
         var com = companies[rand(companies.length)];
         com = getArticleNoun(com);
         var r = rand(adjectives.length + endings.length);
-        
+
         var other;
         if (r < adjectives.length) {
             other = adjectives[r];
@@ -105,7 +105,7 @@ function getIdea() {
             other = endings[r - adjectives.length];
             other = getArticleEnd(other);
         }
-        
+
         document.write("It's like " + com + ", but " + other + ".");
     }
     // FORMAT 4 (25%): "{funny thing}.io"
@@ -115,9 +115,9 @@ function getIdea() {
         do {
             r2 = rand(syl2.length + syl1.length);
         } while (r2 == r1);
-        
+
         var s1 = syl1[r1];
-        
+
         var s2;
         if (r2 < syl2.length) {
             s2 = syl2[r2];
@@ -125,18 +125,18 @@ function getIdea() {
         else {
             s2 = syl1[r2 - syl2.length];
         }
-        
+
 
         document.write(s1 + s2 + ".io");
         link = "https://iwantmyname.com/?domain=" + s1 + s2 + ".io" + "&hideUnavailable=false"
     }
-    
+
     // FORMAT 5 (20%): "It's like {thing} for {blank}s."
     else {
         var com = companies[rand(companies.length)];
         com = getArticleNoun(com);
         var grp = groups[rand(groups.length)];
-        
+
         document.write("It's like " + com + ", but for " + grp + ".");
     }
 }
