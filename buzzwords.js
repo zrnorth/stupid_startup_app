@@ -55,7 +55,11 @@ var companies = [
 "Facebook",
 "GitHub",
 "Stack Overflow",
-"WordPress"];
+"WordPress",
+"+Uber",
+"Candy Crush",
+"Microsoft",
+"Google"];
 
 var endings = [
 " with a flat UI",
@@ -72,7 +76,8 @@ var endings = [
 "+ which runs in real-time",
 " with a focus on accessibility", 
 " with a web-oriented architecture",
-"+ which uses machine learning"];
+"+ which uses machine learning",
+" but watch-first"];
 
 var syl1 = [
 "Snap",
@@ -85,6 +90,7 @@ var syl1 = [
 "Spot",
 "Net",
 "e",
+"i",
 "Pin",
 "Sound",
 "Drop",
@@ -150,4 +156,17 @@ var groups = [
 "architects",
 "deep-sea divers",
 "alcoholics",
-"strippers"];
+"strippers",
+"engineers", 
+"Europeans",
+"doctors",
+"grad students",
+"Italians",
+"farmers",
+"sportsmen",
+"foodies",
+"bakers",
+"race car drivers",
+"cobblers",
+"coffee lovers",
+"Shiba Inus"];
